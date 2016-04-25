@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FMSDataSet6" targetNamespace="http://tempuri.org/FMSDataSet6.xsd" xmlns:mstns="http://tempuri.org/FMSDataSet6.xsd" xmlns="http://tempuri.org/FMSDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FMS_PNP.Properties.Settings.GlobalReference.Default.FMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="loanTableAdapter" GeneratorDataComponentClassName="loanTableAdapter" Name="loan" UserDataComponentName="loanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FMSConnectionString (Settings)" DbObjectName="FMS.dbo.loan" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT cid, loan_id FROM dbo.loan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="cid" DataSetColumn="cid" />
+              <Mapping SourceColumn="loan_id" DataSetColumn="loan_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FMSDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FMSDataSet6" msprop:Generator_UserDSName="FMSDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="loan" msprop:Generator_TableClassName="loanDataTable" msprop:Generator_TableVarName="tableloan" msprop:Generator_TablePropName="loan" msprop:Generator_RowDeletingName="loanRowDeleting" msprop:Generator_RowChangingName="loanRowChanging" msprop:Generator_RowEvHandlerName="loanRowChangeEventHandler" msprop:Generator_RowDeletedName="loanRowDeleted" msprop:Generator_UserTableName="loan" msprop:Generator_RowChangedName="loanRowChanged" msprop:Generator_RowEvArgName="loanRowChangeEvent" msprop:Generator_RowClassName="loanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cid" msprop:Generator_ColumnVarNameInTable="columncid" msprop:Generator_ColumnPropNameInRow="cid" msprop:Generator_ColumnPropNameInTable="cidColumn" msprop:Generator_UserColumnName="cid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="loan_id" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnloan_id" msprop:Generator_ColumnPropNameInRow="loan_id" msprop:Generator_ColumnPropNameInTable="loan_idColumn" msprop:Generator_UserColumnName="loan_id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

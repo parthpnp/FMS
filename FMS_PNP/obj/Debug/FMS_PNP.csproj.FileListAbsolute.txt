@@ -1,0 +1,17 @@
+c:\users\parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\bin\Debug\FMS_PNP.exe.config
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\bin\Debug\FMS_PNP.exe
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\bin\Debug\FMS_PNP.pdb
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\bin\Debug\MetroFramework.Design.dll
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\bin\Debug\MetroFramework.dll
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.FMS_login.resources
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.Properties.Resources.resources
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.csproj.GenerateResource.Cache
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.exe
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.pdb
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.Admin_Dashboard.resources
+C:\Users\Parth\documents\visual studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.CreateAdmin.resources
+C:\Users\Parth\Documents\Visual Studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.SampleWorkArea.resources
+C:\Users\Parth\Documents\Visual Studio 2015\Projects\FMS_PNP\FMS_PNP\obj\Debug\FMS_PNP.csprojResolveAssemblyReference.cache
+C:\Users\Parth\Documents\Visual Studio 2015\Projects\FMS_PNP\FMS_PNP\bin\Debug\itextsharp.dll
+C:\Users\Parth\Documents\Visual Studio 2015\Projects\FMS_PNP\FMS_PNP\bin\Debug\itextsharp.xml

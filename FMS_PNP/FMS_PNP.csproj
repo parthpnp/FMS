@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54B44FA5-334C-4838-8F27-4DE4F5294884}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FMS_PNP</RootNamespace>
+    <AssemblyName>FMS_PNP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.9\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\UIDesign\packages\dll\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\UIDesign\packages\dll\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\UIDesign\packages\dll\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashboard.Designer.cs">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAdmin.Designer.cs">
+      <DependentUpon>CreateAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMSDataSet.cs">
+      <DependentUpon>FMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FMSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleWorkArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleWorkArea.Designer.cs">
+      <DependentUpon>SampleWorkArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trancation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trancation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trancation_new.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trancation_new.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Dashboard.resx">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAdmin.resx">
+      <DependentUpon>CreateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SampleWorkArea.resx">
+      <DependentUpon>SampleWorkArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FMSDataSet.xsc">
+      <DependentUpon>FMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FMSDataSet.xss">
+      <DependentUpon>FMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet1.xsc">
+      <DependentUpon>FMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FMSDataSet1.xss">
+      <DependentUpon>FMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet2.xsc">
+      <DependentUpon>FMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FMSDataSet2.xss">
+      <DependentUpon>FMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet3.xsc">
+      <DependentUpon>FMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FMSDataSet3.xss">
+      <DependentUpon>FMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet4.xsc">
+      <DependentUpon>FMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FMSDataSet4.xss">
+      <DependentUpon>FMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet5.xsc">
+      <DependentUpon>FMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FMSDataSet5.xss">
+      <DependentUpon>FMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet6.xsc">
+      <DependentUpon>FMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FMSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FMSDataSet6.xss">
+      <DependentUpon>FMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="trancation.xsc">
+      <DependentUpon>trancation.xsd</DependentUpon>
+    </None>
+    <None Include="trancation.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trancation.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trancation.xss">
+      <DependentUpon>trancation.xsd</DependentUpon>
+    </None>
+    <None Include="trancation_new.xsc">
+      <DependentUpon>trancation_new.xsd</DependentUpon>
+    </None>
+    <None Include="trancation_new.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trancation_new.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trancation_new.xss">
+      <DependentUpon>trancation_new.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

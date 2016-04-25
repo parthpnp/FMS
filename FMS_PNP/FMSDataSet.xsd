@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FMSDataSet" targetNamespace="http://tempuri.org/FMSDataSet.xsd" xmlns:mstns="http://tempuri.org/FMSDataSet.xsd" xmlns="http://tempuri.org/FMSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FMS_PNP.Properties.Settings.GlobalReference.Default.FMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="customer_masterTableAdapter" GeneratorDataComponentClassName="customer_masterTableAdapter" Name="customer_master" UserDataComponentName="customer_masterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FMSConnectionString (Settings)" DbObjectName="FMS.dbo.customer_master" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT customer_name FROM dbo.customer_master</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="customer_name" DataSetColumn="customer_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FMSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FMSDataSet" msprop:Generator_UserDSName="FMSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="customer_master" msprop:Generator_TableClassName="customer_masterDataTable" msprop:Generator_TableVarName="tablecustomer_master" msprop:Generator_TablePropName="customer_master" msprop:Generator_RowDeletingName="customer_masterRowDeleting" msprop:Generator_RowChangingName="customer_masterRowChanging" msprop:Generator_RowEvHandlerName="customer_masterRowChangeEventHandler" msprop:Generator_RowDeletedName="customer_masterRowDeleted" msprop:Generator_UserTableName="customer_master" msprop:Generator_RowChangedName="customer_masterRowChanged" msprop:Generator_RowEvArgName="customer_masterRowChangeEvent" msprop:Generator_RowClassName="customer_masterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="customer_name" msprop:Generator_ColumnVarNameInTable="columncustomer_name" msprop:Generator_ColumnPropNameInRow="customer_name" msprop:Generator_ColumnPropNameInTable="customer_nameColumn" msprop:Generator_UserColumnName="customer_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
